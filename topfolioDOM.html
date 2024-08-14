@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+  
+    <div id="inside-Headerr">
+        <div id="bright">
+            <h3>MR BRIGHT</h3>
+        </div>
+        <div>
+            <h4>Home</h4>
+        </div>
+        <div>
+            <h4>About</h4>
+        </div>
+        <div>
+            <h4>Work</h4>
+        </div>
+        <div>
+            <h4>Contact</h4>
+        </div>
+        <div>
+            <h4><b>Blog</b></h4>
+        </div>
+
+        <h5 id="contact">contact-us</h5>
+      
+        <div id="smallerdiv">
+            <div id="smally1">
+                <img id="emaill" src="email.png">
+                contact us on email
+
+            </div>
+            <div id="smally2">
+                <img id="whatsapp" src="whatsa.png">
+                contact us on whatsapp
+            </div>
+             
+    </div>
+</body>
+<script>
+    
+    var superior = document.createElement("div")
+    superior.style.borderStyle = "solid"
+    superior.style.width = "850px"
+    superior.style.height = "1300px"
+    superior.style.marginLeft = "300px"
+    superior.style.borderColor = "black"
+    var supercover = document.querySelector("body")
+    supercover.appendChild(superior)
+
+  
+    
+
+    var header = document.getElementById("inside-Headerr")
+    header.style.width = "850px"
+    header.style.height = "40px"
+    header.style.paddingBottom ="20px"
+    // header.style.borderColor = "red"
+    header.style.display = "grid"
+    header.style.alignItems = "start"
+    header.style.justifyItems = "center"
+    header.style.marginLeft="40px"
+    header.style.marginRight="40px"
+    header.style.gridTemplateColumns = " 1fr 1fr 1fr 1fr 1fr 1fr"
+    header.style.gridTemplateRows = " 133px 133px 133px 133px 133px 133px "
+    supercover.appendChild(header)
+    superior.appendChild(header)
+   
+    
+    var header2 = document.createElement("div")
+    // header2.style.borderStyle = "solid"
+     // header2.style.borderColor = "green"
+    var headeri = document.createElement("h1")
+    headeri.innerHTML = "<hr>NEWSLETTER</hr>"
+    header2.style.marginBottom = "50px"
+     header2.style.paddingTop="5px"
+    header2.style.paddingBottom = "50px"
+    header2.style.backgroundColor = "#090D1F"
+    headeri.style.color = "white"
+    headeri.style.textAlign = "center"
+    headeri.style.fontSize = "xx-large"
+    header2.style.width = "850px"
+    header2.style.height = "50px"
+   
+
+
+    var blogs=document.createElement("div")
+    blogs.innerText="All blog Posts"
+    blogs.style.paddingLeft="20px"
+    blogs.style.paddingBottom="10px"
+    supercover.appendChild(header2)
+    superior.appendChild(header2)
+    header2.appendChild(headeri)
+    superior.appendChild(blogs)
+
+
+
+    var subHeader = document.createElement("div")
+    // subHeader.style.borderStyle = "solid"
+    // subHeader.style.borderColor = "yellow"
+    subHeader.style.width = "850px"
+    subHeader.style.height = "750px"
+    subHeader.style.marginBottom = "10px"
+    subHeader.style.display = "grid"
+    subHeader.style.alignItems = "start"
+    subHeader.style.rowGap = "110px"
+    subHeader.style.columnGap = "30px"
+    subHeader.style.gridTemplateColumns="1fr 1fr 1fr 1fr 1fr 1fr"
+    subHeader.style.gridTemplateRows="133px 133px 133px 133px 133px 133px"
+    superior.appendChild(subHeader)
+
+    var lastBorder=document.createElement("div")
+    lastBorder.style.height ="290px"
+    lastBorder.style.width = "850px"
+    // lastBorder.style.borderStyle = "solid"
+    // lastBorder.style.borderColor ="red"
+    lastBorder.style.marginTop ="10px"
+    lastBorder.style.paddingTop ="10px"
+    lastBorder.style.backgroundColor ="rgb(5, 5, 49)"
+    superior.appendChild(lastBorder)
+    
+    var cont=document.getElementById("contact")
+    cont.innerHTML="contact-us<br><h5> you can always reach us at your own convenience<br>with any of our hotlines, feel free and welcome</h5>"
+    cont.style.color="white"
+    cont.style.paddingLeft="100px"
+    cont.style.fontSize="x-large"
+    cont.style.fontWeight= "bolder"
+    lastBorder.appendChild(cont)
+   
+
+
+    var sDiv=document.getElementById("smallerdiv")
+    sDiv.style.display ="grid"
+    sDiv.style.textAlign="center"
+    sDiv.style.gridTemplateColumns="1fr 1fr 1fr"
+    sDiv.style.gridTemplateRows="250px 250px  250px"
+    // sDiv.style.width="600px"
+    // sDiv.style.height="50px"
+    // sDiv.style.borderStyle="solid"
+    // sDiv.style.borderColor="brown"
+    sDiv.style.marginLeft="100px"
+    sDiv.style.marginTop="55px"
+    sDiv.style.columnGap="20px"
+    lastBorder.appendChild(sDiv)
+  
+
+    
+   
+    var smalla=document.getElementById("smally1")
+    smalla.style.height="30px"
+    smalla.style.width="220px"
+    smalla.style.borderColor="blue"
+    smalla.style.borderStyle= "solid"
+    smalla.style.color="white"
+    smalla.style.textAlign="center"
+    smalla.style.paddingBottom= "15pX"
+    var email=document.getElementById("emaill")
+    email.style.height="30px"
+    email.style.width="30px"
+    smalla.style.paddinfLeft="30px"
+    sDiv.appendChild(smalla)
+    smalla.appendChild(email)
+
+   
+
+    var smallb=document.getElementById("smally2")
+    smallb.style.height="30px"
+    smallb.style.width="220px"
+    smallb.style.borderColor="blue"
+    smallb.style.borderStyle= "solid"
+    smallb.style.color="white"
+    smallb.style.textAlign="center"
+    smallb.style.paddingBottom= "15pX"
+    var whatsap=document.getElementById("whatsapp")
+    whatsap.style.height="30px"
+    whatsap.style.width="30px"
+    smallb.style.paddinfLeft="30px"
+    smallb.appendChild(whatsap)
+    sDiv.appendChild(smallb)
+
+    var undercover=document.createElement("section")
+    var box2=document.createElement("div")
+    box2.style.width="200px"
+    box2.style.height="270px"
+    box2.style.paddingBottom="10px"
+    var image2=document.createElement("img")
+    image2.setAttribute("src", "box3.jpg")
+    image2.style.height="100px"
+    image2.style.width="180px"
+    var write2=document.createElement("h5")
+    write2.innerHTML ="<b>PM Metal Models</b><h5>Metal models are simple expression of complex processes or relationship</h5>"
+    write2.style.height="90px"
+    write2.style.width="260px"
+    undercover.appendChild(box2)
+    box2.appendChild(image2)
+    // image1.appendChild(write1)
+    box2.appendChild(write2)
+    subHeader.appendChild(box2)
+    subHeader.appendChild(undercover)
+
+
+
+    var undercover=document.createElement("section")
+    var box1=document.createElement("div")
+    box1.style.width="200px"
+    box1.style.height="270px"
+    // box1.style.borderStyle="solid"
+    box1.style.paddingBottom="10px"
+    var image1=document.createElement("img")
+    image1.setAttribute("src", "box2.jpg")
+    image1.style.height="100px"
+    image1.style.width="180px"
+    var write1=document.createElement("h5")
+    // write1.style.borderStyle="solid"
+    write1.innerHTML = "<b>Bill Walsh leadership lessons</b>.<br><h5>like to know secrets of transformating<br>.2x team into a 3x super Bowl winning?</h5>"
+    write1.style.height="90px"
+    write1.style.width="260px"
+    undercover.appendChild(box1)
+    box1.appendChild(image1)
+    // image1.appendChild(write1)
+    box1.appendChild(write1)
+    subHeader.appendChild(box1)
+    subHeader.appendChild(undercover)
+
+    var undercover=document.createElement("section")
+    var box3=document.createElement("div")
+    box3.style.width="200px"
+    box3.style.height="270px"
+    // box1.style.borderStyle="solid"
+    box3.style.paddingBottom="10px"
+    var image3=document.createElement("img")
+    image3.setAttribute("src", "box4.jpg")
+    image3.style.height="100px"
+    image3.style.width="180px"
+    var write3=document.createElement("h5")
+    // write1.style.borderStyle="solid"
+    write3.innerHTML = "  <b>What is wireframing?</b><h5>Introduction to wireframing and its Principles.<br>learn from the best in the Industry</h5>"
+    write3.style.height="90px"
+    write3.style.width="260px"
+    undercover.appendChild(box3)
+    box3.appendChild(image3)
+    // image1.appendChild(write1)
+    box3.appendChild(write3)
+    subHeader.appendChild(box3)
+    subHeader.appendChild(undercover)
+
+
+    var undercover=document.createElement("section")
+    var box2=document.createElement("div")
+    box2.style.width="200px"
+    box2.style.height="270px"
+    // box1.style.borderStyle="solid"
+    box2.style.paddingBottom="10px"
+    var image2=document.createElement("img")
+    image2.setAttribute("src", "box3.jpg")
+    image2.style.height="100px"
+    image2.style.width="180px"
+    var write2=document.createElement("h5")
+    // write1.style.borderStyle="solid"
+    write2.innerHTML ="<b>PM Metal Models</b><h5>Metal models are simple expression of complex processes or relationship</h5>"
+    write2.style.height="90px"
+    write2.style.width="260px"
+    undercover.appendChild(box2)
+    box2.appendChild(image2)
+    // image1.appendChild(write1)
+    box2.appendChild(write2)
+    subHeader.appendChild(box2)
+    subHeader.appendChild(undercover)
+
+    var undercover=document.createElement("section")
+    var box1=document.createElement("div")
+    box1.style.width="200px"
+    box1.style.height="270px"
+    // box1.style.borderStyle="solid"
+    box1.style.paddingBottom="10px"
+    var image1=document.createElement("img")
+    image1.setAttribute("src", "box2.jpg")
+    image1.style.height="100px"
+    image1.style.width="180px"
+    var write1=document.createElement("h5")
+    // write1.style.borderStyle="solid"
+    write1.innerHTML = "<b>Bill Walsh leadership lessons</b>.<br><h5>like to know secrets of transformating<br>.2x team into a 3x super Bowl winning?</h5>"
+    write1.style.height="90px"
+    write1.style.width="260px"
+    undercover.appendChild(box1)
+    box1.appendChild(image1)
+    // image1.appendChild(write1)
+    box1.appendChild(write1)
+    subHeader.appendChild(box1)
+    subHeader.appendChild(undercover)
+
+   
+    var undercover=document.createElement("section")
+    var box3=document.createElement("div")
+    box3.style.width="200px"
+    box3.style.height="270px"
+    // box1.style.borderStyle="solid"
+    box3.style.paddingBottom="10px"
+    var image3=document.createElement("img")
+    image3.setAttribute("src", "box4.jpg")
+    image3.style.height="100px"
+    image3.style.width="180px"
+    var write3=document.createElement("h5")
+    // write1.style.borderStyle="solid"
+    write3.innerHTML = "  <b>What is wireframing?</b><h5>Introduction to wireframing and its Principles.<br>learn from the best in the Industry</h5>"
+    write3.style.height="90px"
+    write3.style.width="260px"
+    undercover.appendChild(box3)
+    box3.appendChild(image3)
+    // image1.appendChild(write1)
+    box3.appendChild(write3)
+    subHeader.appendChild(box3)
+    subHeader.appendChild(undercover)
+
+    
+
+    var undercover=document.createElement("section")
+    var box2=document.createElement("div")
+    box2.style.width="200px"
+    box2.style.height="270px"
+    // box1.style.borderStyle="solid"
+    box2.style.paddingBottom="10px"
+    var image2=document.createElement("img")
+    image2.setAttribute("src", "box3.jpg")
+    image2.style.height="100px"
+    image2.style.width="180px"
+    var write2=document.createElement("h5")
+    // write1.style.borderStyle="solid"
+    write2.innerHTML ="<b>PM Metal Models</b><h5>Metal models are simple expression of complex processes or relationship</h5>"
+    write2.style.height="90px"
+    write2.style.width="260px"
+    undercover.appendChild(box2)
+    box2.appendChild(image2)
+    // image1.appendChild(write1)
+    box2.appendChild(write2)
+    subHeader.appendChild(box2)
+    subHeader.appendChild(undercover)
+    
+
+    var undercover=document.createElement("section")
+    var box1=document.createElement("div")
+    box1.style.width="280px"
+    box1.style.height="270px"
+    // box1.style.borderStyle="solid"
+    box1.style.paddingBottom="10px"
+    var image1=document.createElement("img")
+    image1.setAttribute("src", "box2.jpg")
+     image1.style.height="100px"
+    image1.style.width="180px"
+    var write1=document.createElement("h5")
+    // write1.style.borderStyle="solid"
+    write1.innerHTML = "<b>Bill Walsh leadership lessons</b>.<br><h5>like to know secrets of transformating<br>.2x team into a 3x super Bowl winning?</h5>"
+    write1.style.height="90px"
+    write1.style.width="270px"
+    undercover.appendChild(box1)
+    box1.appendChild(image1)
+    // image1.appendChild(write1)
+    box1.appendChild(write1)
+    subHeader.appendChild(box1)
+    subHeader.appendChild(undercover)
+    
+
+    
+    var undercover=document.createElement("section")
+    var box3=document.createElement("div")
+    box3.style.width="200px"
+    box3.style.height="270px"
+    // box1.style.borderStyle="solid"
+    box3.style.paddingBottom="10px"
+    var image3=document.createElement("img")
+    image3.setAttribute("src", "box4.jpg")
+    image3.style.height="100px"
+    image3.style.width="180px"
+    var write3=document.createElement("h5")
+    // write1.style.borderStyle="solid"
+    write3.innerHTML = "  <b>What is wireframing?</b><h5>Introduction to wireframing and its Principles.<br>learn from the best in the Industry</h5>"
+    write3.style.height="90px"
+    write3.style.width="260px"
+    undercover.appendChild(box3)
+    box3.appendChild(image3)
+    // image1.appendChild(write1)
+    box3.appendChild(write3)
+    subHeader.appendChild(box3)
+    subHeader.appendChild(undercover)
+
+
+
+</script>
+
+</html>
